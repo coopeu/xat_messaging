@@ -8,4 +8,9 @@ Rails.application.routes.draw do
 
   root to: "chatrooms#index"
 
+  resources :conversations do
+  	resources :mailmessages  	
+  end
+
+
 end

@@ -6,4 +6,15 @@ class User < ApplicationRecord
   has_many :chatroom_users
   has_many :chatrooms, through: :chatroom_users
   has_many :messages
+
+  acts_as_messageable
+
+	def name
+		'User #{id}'
+	end
+
+	def mailboxer_email(object)
+		nil
+	end 
+
 end
