@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 development:
   host: localhost
@@ -26,3 +27,22 @@ production:
   username: padels
   password: padels3005
   socket: /var/run/mysqld/mysqld.sock
+=======
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: RoR_xat_dev
+  pool: 5
+  username: padels
+  password: padels3005
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: RoR_xat
+  pool: 5
+  username: padels
+  password: padels3005
+  socket: /var/run/mysqld/mysqld.sock
+>>>>>>> messaging
